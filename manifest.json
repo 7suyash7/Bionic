@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Bionic Reading Extension",
+    "version": "1.0",
+    "description": "Enable Bionic Reading on web pages",
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["index.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "permissions": ["activeTab"],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon-16.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+      }
+    },
+    "icons": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  }
+  
